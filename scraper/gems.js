@@ -9,7 +9,7 @@ const skillData = {
 }
 
 const ignoredTags = ['Aura', 'Warcry', 'Duration', 'Channelling', 'Trigger', 'Chaining', 'Movement', 'Nova', 'Golem', 'Critical', 'Prismatic', 'Orb', 'Arcane', 'AoE', 'Melee', 'Projectile']
-const ignoredGems = ['Flesh Offering', 'Bone Offering', 'Spirit Offering', 'Portal', 'Detonate Mines', 'Brand Recall', 'Berserk', 'Blood Rage', 'Corrupting Fever', 'Arctic Armour', 'Tempest Shield', 'Temporal Rift', 'Convocation', 'Wither']
+const ignoredGems = ['Flesh Offering', 'Bone Offering', 'Spirit Offering', 'Portal', 'Detonate Mines', 'Brand Recall', 'Berserk', 'Blood Rage', 'Corrupting Fever', 'Arctic Armour', 'Tempest Shield', 'Temporal Rift', 'Convocation', 'Wither', 'Petrified Blood']
 
 const scrapeGems = async () => {
     const data = await fetch('https://poedb.tw/us/Gem')
