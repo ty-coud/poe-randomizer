@@ -1,0 +1,107 @@
+{
+    "classes": [{
+        "name": "Marauder",
+        "stats": ["Str"],
+        "ascendancies": [{
+            "name": "Juggernaut",
+            "img": "https://web.poecdn.com/protected/image/ascendancy/classes/Juggernaut.png?key=LHQvGo1xEJk5tokr2-WH6A",
+            "identity": ["Generic"]
+        }, {
+            "name": "Berserker",
+            "img": "https://web.poecdn.com/protected/image/ascendancy/classes/Berserker.png?key=IiogUakVDfIeNoPhoN0NsA",
+            "identity": ["Generic"]
+        }, {
+            "name": "Chieftain",
+            "img": "https://web.poecdn.com/protected/image/ascendancy/classes/Chieftain.png?key=fgstgv3S25GHOGUneesHYQ",
+            "identity": ["Generic"]
+        }]
+    }, {
+        "name": "Ranger",
+        "stats": ["Dex"],
+        "ascendancies": [{
+            "name": "Deadeye",
+            "img": "https://web.poecdn.com/protected/image/ascendancy/classes/Deadeye.png?key=mh3nVAVjUFvZ0j7tyI0Keg",
+            "identity": ["Generic"]
+        }, {
+            "name": "Raider",
+            "img": "https://web.poecdn.com/protected/image/ascendancy/classes/Raider.png?key=QoUivWj75b3HMgh2ufVBqw",
+            "identity": ["Generic"]
+        }, {
+            "name": "Pathfinder",
+            "img": "https://web.poecdn.com/protected/image/ascendancy/classes/Pathfinder.png?key=ZFc_tI9UME1FCzBuRJu1kg",
+            "identity": ["Generic"]
+        }]
+    }, {
+        "name": "Witch",
+        "stats": ["Int"],
+        "ascendancies": [{
+            "name": "Necromancer",
+            "img": "https://web.poecdn.com/protected/image/ascendancy/classes/Necromancer.png?key=iIz_B6Qa4S4BmyUPsD4Zhg",
+            "identity": ["Minion"]
+        }, {
+            "name": "Occultist",
+            "img": "https://web.poecdn.com/protected/image/ascendancy/classes/Occultist.png?key=RhxRa0478AbZbDVb56Nivg",
+            "identity": ["Generic", "Hex"]
+        }, {
+            "name": "Elementalist",
+            "img": "https://web.poecdn.com/protected/image/ascendancy/classes/Elementalist.png?key=PyVvga-GGMU_d39ZHAwq_w",
+            "identity": ["Generic"]
+        }]
+    }, {
+        "name": "Duelist",
+        "stats": ["Str", "Dex"],
+        "ascendancies": [{
+            "name": "Slayer",
+            "img": "https://web.poecdn.com/protected/image/ascendancy/classes/Slayer.png?key=sruj_RNbHrvnwvgRrOXtKQ",
+            "identity": ["Generic"]
+        }, {
+            "name": "Gladiator",
+            "img": "https://web.poecdn.com/protected/image/ascendancy/classes/Gladiator.png?key=CQNCVbbMQyRAf1ky-u_JQg",
+            "identity": ["Generic"]
+        }, {
+            "name": "Champion",
+            "img": "https://web.poecdn.com/protected/image/ascendancy/classes/Champion.png?key=p_SgHlm78hFSFRO9JdZR9g",
+            "identity": ["Generic"]
+        }]
+    }, {
+        "name": "Templar",
+        "stats": ["Str", "Int"],
+        "ascendancies": [{
+            "name": "Inquisitor",
+            "img": "https://web.poecdn.com/protected/image/ascendancy/classes/Inquisitor.png?key=VPddR3nZAx4jihYzoQkbwA",
+            "identity": ["Generic"]
+        }, {
+            "name": "Hierophant",
+            "img": "https://web.poecdn.com/protected/image/ascendancy/classes/Hierophant.png?key=1fIS8PaqTDexELz5s3cZEw",
+            "identity": ["Totem", "Brand"]
+        }, {
+            "name": "Guardian",
+            "img": "https://web.poecdn.com/protected/image/ascendancy/classes/Guardian.png?key=hw5JtgrF7ypmQagGiIKaBw",
+            "identity": ["Minion"]
+        }]
+    }, {
+        "name": "Shadow",
+        "stats": ["Dex", "Int"],
+        "ascendancies": [{
+            "name": "Assassin",
+            "img": "https://web.poecdn.com/protected/image/ascendancy/classes/Assassin.png?key=yalbwjvZw8S-zfDed9bKIQ",
+            "identity": ["Generic"]
+        }, {
+            "name": "Saboteur",
+            "img": "https://web.poecdn.com/protected/image/ascendancy/classes/Saboteur.png?key=rTfRSMb9LmRaLmxYNze73A",
+            "identity": ["Mine", "Trap"]
+        }, {
+            "name": "Trickster",
+            "img": "https://web.poecdn.com/protected/image/ascendancy/classes/Trickster.png?key=3YI5hgCSCsjqSwo7lXvsJA",
+            "identity": ["Generic"]
+        }]
+    }, {
+        "name": "Scion",
+        "stats": ["Str", "Dex", "Int"],
+        "ascendancies": [{
+            "name": "Ascendant",
+            "img": "https://web.poecdn.com/protected/image/ascendancy/classes/Ascendant.png?key=xvdp-bhxzT-sSMeEkrnJaw",
+            "identity": ["Generic", "Mine", "Trap", "Totem", "Brand", "Minion", "Hex"]
+        }]
+    }]
+}
