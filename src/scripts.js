@@ -5,11 +5,6 @@ let { skills } = require('./data/skills.json')
 
 skills = skills.filter((skill, index, array) => array.indexOf(skill) === index)
 
-// Add Supports That Enable Identities
-// Arcanist Brand
-// Trap Support
-// Etc.
-
 window.onload = function() {
     const button = document.querySelector('button#btn-randomize')
     button.addEventListener('click', (e) => {
@@ -118,6 +113,9 @@ const displayResult = (data) => {
     const resultsGem = document.querySelector('h2.results-gem')
     resultsGem.innerText = skill.name
 
+    const resultsGemLink = document.querySelector('a.results-gem-link')
+    resultsGemLink.href = skill.link
+
     const resultsGemImg = document.querySelector('img.results-gem-img')
     resultsGemImg.alt = skill.name
     resultsGemImg.src = skill.img
@@ -128,10 +126,16 @@ const displayResult = (data) => {
         const resultsGemImgTrigger = document.querySelector('img.results-gem-img-trigger')
         resultsGemImgTrigger.alt = skill.trigger.name
         resultsGemImgTrigger.src = skill.trigger.img
+
+        const resultsGemLinkTrigger = document.querySelector('a.results-gem-link-trigger')
+        resultsGemLinkTrigger.href = skill.link
     } else {
         const resultsGemImgTrigger = document.querySelector('img.results-gem-img-trigger')
         resultsGemImgTrigger.alt = ''
         resultsGemImgTrigger.src = ''
+
+        const resultsGemLinkTrigger = document.querySelector('a.results-gem-link-trigger')
+        resultsGemLinkTrigger.href = ''
     }
 
     section.style.display = 'block'

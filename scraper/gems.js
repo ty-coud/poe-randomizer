@@ -33,14 +33,16 @@ const getGems = ($) => {
         for (let i = 0; i < gems.length; i++) {
             const gem = gems[i];
             
-            let stat
-
+            let stat, link
             if ($(gem).find('a.gem_red')[0] !== undefined) {
                 stat = 'Str'
+                link = `https://poedb.tw${$(gem).find('a.gem_red')[0].attribs.href}`
             } else if ($(gem).find('a.gem_green')[0] !== undefined) {
                 stat = 'Dex'
+                link = `https://poedb.tw${$(gem).find('a.gem_green')[0].attribs.href}`
             } else if ($(gem).find('a.gem_blue')[0] !== undefined) {
                 stat = 'Int'
+                link = `https://poedb.tw${$(gem).find('a.gem_blue')[0].attribs.href}`
             }
 
             const name = $(gem).text().split('(')[0].trim()
@@ -73,27 +75,27 @@ const getGems = ($) => {
                     if (!tags.includes('Aura')) {
                         if (!tags.includes('Trigger')) {
                             if (!ignoredGems.includes(name)) {
-                                skillData.skills.push({ name, tags, img, stat, identity })
+                                skillData.skills.push({ name, tags, img, stat, identity, link })
 
                                 for (let i = 0; i < tags.length; i++) { if (!skillData.tags.includes(tags[i])) { skillData.tags.push(tags[i]) } }
                             }
                         } else if (name === 'Bane' || name === 'Arcanist Brand') {
-                            skillData.skills.push({ name, tags, img, stat, identity })
+                            skillData.skills.push({ name, tags, img, stat, identity, link })
 
                             for (let i = 0; i < tags.length; i++) { if (!skillData.tags.includes(tags[i])) { skillData.tags.push(tags[i]) } }
                         }
                     } else if (name === 'Smite' || name === 'Stormblast Mine' || name === 'Icicle Mine' || name === 'Pyroclast Mine') {
-                        skillData.skills.push({ name, tags, img, stat, identity })
+                        skillData.skills.push({ name, tags, img, stat, identity, link })
 
                         for (let i = 0; i < tags.length; i++) { if (!skillData.tags.includes(tags[i])) { skillData.tags.push(tags[i]) } }
                     }
                 } else if (name === "General's Cry") {
-                    skillData.skills.push({ name, tags, img, stat, identity })
+                    skillData.skills.push({ name, tags, img, stat, identity, link })
 
                     for (let i = 0; i < tags.length; i++) { if (!skillData.tags.includes(tags[i])) { skillData.tags.push(tags[i]) } }
                 }
             } else if (name === 'Earthbreaker Support' || name === 'Trap Support' || name === 'Blastchain Mine Support' || name === 'High-Impact Mine Support' || name === 'Spell Totem Support' || name === 'Ballista Totem Support' || name === 'Arcanist Brand') {
-                skillData.skills.push({ name, tags, img, stat, identity })
+                skillData.skills.push({ name, tags, img, stat, identity, link })
 
                 for (let i = 0; i < tags.length; i++) { if (!skillData.tags.includes(tags[i])) { skillData.tags.push(tags[i]) } }
             }
