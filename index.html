@@ -16,6 +16,29 @@
     <main class="container">
         <h1 class="title">Path of Exile Randomizer</h1>
 
+        <div class="filters-container">
+            <div class="filter">
+                <label for="filter-class">Character</label>
+                <select name="filter-class" id="filter-class">
+                    <option default value="">------</option>
+                    <option value="filter-class-marauder">Marauder</option>
+                    <option value="filter-class-ranger">Ranger</option>
+                    <option value="filter-class-witch">Witch</option>
+                    <option value="filter-class-duelist">Duelist</option>
+                    <option value="filter-class-templar">Templar</option>
+                    <option value="filter-class-shadow">Shadow</option>
+                    <option value="filter-class-scion">Scion</option>
+                </select>
+            </div>
+            
+            <div class="filter">
+                <label for="filter-ascendancy">Ascendancy</label>
+                <select name="filter-ascendancy" id="filter-ascendancy" disabled>
+                    <option default value="">------</option>
+                </select>
+            </div>
+        </div>
+
         <button id="btn-randomize" class="btn">Randomize</button>
 
         <section id="results">
